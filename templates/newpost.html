@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>:|:|: Pl3pla Blog :|:|:</title>
+
+     <style type="text/css">
+
+        body{
+            font-family: sans serif;
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        label{
+            display: block;
+            font-size: 20px;
+        }
+
+        input[type=text]{
+            width: 600px;
+            font-size: 20px;
+            padding: 2px;
+        }
+
+        textarea{
+            width: 600px;
+            height: 400px;
+            font-size: 17px;
+            font-family: monospace;
+        }
+        input[type=submit]{
+            font-size: 24px;
+        }
+         h1{
+            margin: 0 auto;
+            color: black;
+         }
+
+         a:link {
+            text-decoration: none;
+
+         }
+
+    </style>
+</head>
+<body>
+    <a href="/blog"><h1>:|:|: Pl3pla Blog :|:|:</h1></a>
+<br>
+<br>
+    <br>
+
+    <form method="post">
+
+        <label>
+            <div>Subject</div>
+            <input type="text" name="subject" value="{{subject}}">
+        </label>
+        <br>
+        <label>
+            <div>Blog</div>
+            <textarea name="content">{{content}}</textarea>
+        </label>
+        <div class="error">{{error}}</div>
+
+        <input type="submit">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+{% extends "head.html" %}
+
+{% block content %}
+<div class="art-title">
+     <h3>{{post.subject | safe}}</h3>
+</div>
+<hr align="left">
+
+
+<p style="font-family:'helvetica', 'arial', 'sans-serif'; font-size:10pt; padding:7px 5px 5px 7px; width: 600px;">
+            {{post.content | safe}}</p>
+
+<div> {{time}}</div>
+{% endblock %}

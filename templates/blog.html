@@ -1,0 +1,19 @@
+
+{% extends "head.html" %}
+
+{% block content %}
+
+    {% for blog in data %}
+
+            <div class="art-title">
+                <h3>{{blog.subject}}</h3>
+            </div>
+            <hr align="left">
+            <p style="font-family:'helvetica', 'arial', 'sans-serif'; font-size:10pt; padding:7px 5px 5px 7px; width: 600px;">
+            {{blog.content}}</p>
+                <br>
+                <br>
+
+    {% endfor %}
+    <div>{{time}}</div>
+{% endblock %}
